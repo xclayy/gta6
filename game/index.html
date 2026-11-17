@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset Harbor — Streets of Gold</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0a12;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #game {
+    display: block;
+    background: #0a0a12;
+    image-rendering: auto;
+    cursor: crosshair;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+  }
+  #fallback {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    display: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<div id="fallback"><p>Sunset Harbor needs JavaScript and a canvas-capable browser.</p></div>
+<noscript><p style="color:#fff">Sunset Harbor needs JavaScript enabled.</p></noscript>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
